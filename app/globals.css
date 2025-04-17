@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 30% 97%;
+    --foreground: 300 15% 25%;
+    --card: 30 30% 97%;
+    --card-foreground: 300 15% 25%;
+    --popover: 30 30% 97%;
+    --popover-foreground: 300 15% 25%;
+    --primary: 5 50% 50%;
+    --primary-foreground: 30 30% 97%;
+    --secondary: 340 25% 60%;
+    --secondary-foreground: 300 15% 25%;
+    --muted: 280 15% 80%;
+    --muted-foreground: 300 10% 40%;
+    --accent: 40 50% 55%;
+    --accent-foreground: 300 15% 25%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 30 30% 97%;
+    --border: 280 15% 80%;
+    --input: 280 15% 80%;
+    --ring: 5 50% 50%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 300 15% 15%;
+    --foreground: 30 30% 97%;
+    --card: 300 15% 15%;
+    --card-foreground: 30 30% 97%;
+    --popover: 300 15% 15%;
+    --popover-foreground: 30 30% 97%;
+    --primary: 5 50% 50%;
+    --primary-foreground: 30 30% 97%;
+    --secondary: 340 25% 40%;
+    --secondary-foreground: 30 30% 97%;
+    --muted: 280 15% 25%;
+    --muted-foreground: 280 15% 70%;
+    --accent: 40 50% 45%;
+    --accent-foreground: 30 30% 97%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 30 30% 97%;
+    --border: 280 15% 25%;
+    --input: 280 15% 25%;
+    --ring: 5 50% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Dreamy gradient background */
+.dreamy-bg {
+  background: linear-gradient(135deg, #f5efe6 0%, #e8a3a3 100%);
+}
+
+.dark .dreamy-bg {
+  background: linear-gradient(135deg, #7d5a7a 0%, #a13b3b 100%);
+}
